@@ -1,5 +1,5 @@
 
-## Configure Git:
+## Configure Git: Day-01
 ```bash
 git config --global user.name "Omkar Mahandule"
 git config --global user.email "your.email@example.com"
