@@ -31,7 +31,7 @@ Collection of users with shared permissions.
 Temporary permissions assigned to AWS services or users.
 
 ### Least Privilege Principle
-Grant only the permissions required — nothing more.￼
+Grant only the permissions required — nothing more.
 
 <img width="1400" height="651" alt="IAM ppt " src="https://github.com/user-attachments/assets/56b7e5b7-3e45-49c6-8364-48d29c9b74b2" />
 
