@@ -35,7 +35,7 @@ To understand how Amazon S3 works by performing end-to-end hands-on practice, co
 
 ---
 
-### 2️⃣ Object Upload
+### 2️ Object Upload
 - Uploaded `.txt`, `.pdf`, and image files
 - Explored object metadata and object keys
 
@@ -44,13 +44,13 @@ To understand how Amazon S3 works by performing end-to-end hands-on practice, co
 
 ---
 
-### 3️⃣ Folder Structure (Logical)
+### 3️ Folder Structure (Logical)
 - Created logical folders using prefixes: logs/
 - Learned that S3 does **not** have real directories
 
 ---
 
-### 4️⃣ Enabled Versioning
+### 4️ Enabled Versioning
 - Enabled bucket versioning
 - Uploaded the same file multiple times
 - Verified multiple versions of the same 
@@ -60,7 +60,7 @@ To understand how Amazon S3 works by performing end-to-end hands-on practice, co
 
 ---
 
-### 5️⃣ Delete & Recovery Test
+### 5️ Delete & Recovery Test
 - Deleted an object
 - Observed delete marker behavior
 - Restored object by removing delete marker
@@ -71,7 +71,7 @@ To understand how Amazon S3 works by performing end-to-end hands-on practice, co
 
 ---
 
-### 6️⃣ Storage Classes
+### 6️ Storage Classes
 - Changed object storage class to:
 - `Standard-IA` (Standard – Infrequent Access)
 - Understood cost-based storage optimization
@@ -81,7 +81,7 @@ To understand how Amazon S3 works by performing end-to-end hands-on practice, co
 
 ---
 
-### 7️⃣ Lifecycle Policy
+### 7️ Lifecycle Policy
 Configured lifecycle rule:
 - Transition objects to **Glacier after 30 days**
 - Permanently delete objects after **365 days**
@@ -95,7 +95,7 @@ Purpose: **Automated cost optimization**
 
 ---
 
-### 8️⃣ Access Control & Security
+### 8️ Access Control & Security
 - Verified:
 - Block public access enabled
 - No public bucket policy
@@ -104,13 +104,13 @@ Purpose: **Automated cost optimization**
 
 ---
 
-### 9️⃣ Encryption
+### 9️ Encryption
 - Encryption at rest: **SSE-S3**
 - Encryption in transit: **HTTPS (default)**
 
 ---
 
-### 🔐 10️⃣ IAM Integration
+### 10️ IAM Integration
 - Created IAM policy with limited permissions:
 - `s3:GetObject`
 - `s3:ListBucket`
@@ -121,7 +121,7 @@ Purpose: **Automated cost optimization**
 
 ---
 
-### 🧹 11️⃣ Cleanup
+### 11️ Cleanup
 - Deleted all objects and versions
 - Deleted bucket to avoid unnecessary charges
 
