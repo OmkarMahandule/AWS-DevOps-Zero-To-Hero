@@ -1,4 +1,4 @@
-# Day 8 – AWS CloudFormation (EC2 Application Stack)
+# Day 7 – AWS CloudFormation (EC2 Application Stack)
 
 This document demonstrates hands-on experience with **AWS CloudFormation** by provisioning a complete **EC2-based application stack** using **Infrastructure as Code (IaC)**.
 
