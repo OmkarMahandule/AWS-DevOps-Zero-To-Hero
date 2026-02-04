@@ -59,29 +59,7 @@ Learning:
 
 ---
 
-## Step 3: Defining EC2 Resource
-
-Actions performed:
-- Added EC2 instance resource
-- Selected instance type supported in region
-- Linked key pair using parameter reference
-
-Example resource snippet:
-    
-    Resources:
-      OmkarEC2:
-        Type: AWS::EC2::Instance
-        Properties:
-          InstanceType: t3.micro
-          KeyName: !Ref KeyPairName
-
-Learning:
-- Instance type availability depends on region
-- Key pair must exist in the same region
-
----
-
-## Step 4: Stack Creation via AWS Console
+## Step 3: Stack Creation via AWS Console
 
 Actions performed:
 - Opened CloudFormation console
@@ -94,7 +72,7 @@ Actions performed:
 
 ---
 
-## Step 5: Stack Failure – AMI Not Found
+## Step 4: Stack Failure – AMI Not Found
 
 Error encountered:
 - EC2 instance creation failed
@@ -108,7 +86,7 @@ Learning:
 
 ---
 
-## Step 6: Fixing Errors and Recreating Stack
+## Step 5: Fixing Errors and Recreating Stack
 
 Actions performed:
 - Updated template values
@@ -124,7 +102,7 @@ Stack states observed:
 
 ---
 
-## Step 7: Stack Deletion (Cleanup)
+## Step 6: Stack Deletion (Cleanup)
 
 Actions performed:
 - Deleted CloudFormation stack after testing
@@ -134,9 +112,6 @@ Learning:
 - Stack deletion cleans all managed resources
 - Prevents unnecessary AWS costs
 - IaC encourages clean infrastructure lifecycle
-
-Screenshot to add:
-- Stack deletion confirmation
 
 ---
 
