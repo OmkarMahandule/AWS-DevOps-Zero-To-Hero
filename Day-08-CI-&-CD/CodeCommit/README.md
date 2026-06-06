@@ -107,6 +107,9 @@ CodeCommit records:
 - Modified files
 - Branch information
 
+  <img width="1920" height="927" alt="Screenshot from 2026-06-06 20-09-21" src="https://github.com/user-attachments/assets/16cdd8fa-52bf-4208-826c-3f19388184dc" />
+
+
 ### Step 5: Trigger the Pipeline
 
 A successful push can trigger the next stages of the CI/CD pipeline, such as build, testing, and deployment.
