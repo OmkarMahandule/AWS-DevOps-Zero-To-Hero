@@ -1,4 +1,4 @@
-# CI/CD Fundamentals
+# Day-08: CI/CD Fundamentals
 
 This folder contains hands-on practice with the core AWS services that form the foundation of a CI/CD pipeline.
 
