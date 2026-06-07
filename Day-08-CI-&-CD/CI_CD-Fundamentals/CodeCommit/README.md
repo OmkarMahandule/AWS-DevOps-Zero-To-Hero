@@ -177,19 +177,7 @@ git merge feature-branch
 - Easy integration with AWS CI/CD services
 - Supports collaborative development workflows
 
----
 
-## Real-World Use Case
-
-Consider an e-commerce application being developed by a team.
-
-1. Developers push code changes to CodeCommit.
-2. CodePipeline detects the new commit.
-3. CodeBuild compiles the application and runs tests.
-4. CodeDeploy deploys the updated application.
-5. Users receive the latest version without manual intervention.
-
-This enables faster and more reliable software delivery.
 
 ---
 
