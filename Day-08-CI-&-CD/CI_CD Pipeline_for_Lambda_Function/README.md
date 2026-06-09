@@ -20,7 +20,7 @@ AWS CodeBuild
 AWS Lambda
 
 ```
-<img width="1895" height="463" alt="Project flow image" src="https://github.com/user-attachments/assets/054190fa-afb5-4c75-bd70-967627e8d7b1" />
+<img width="917" height="510" alt="image" src="https://github.com/user-attachments/assets/536918fc-dc7a-4c23-8f1b-2ecca8ebccab" />
 
 
 Whenever code is pushed to GitHub, the pipeline automatically triggers, builds the deployment package, and updates the Lambda function.
