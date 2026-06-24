@@ -23,6 +23,32 @@ The project integrates multiple DevOps tools and AWS services including Jenkins,
 
 ---
 
+# Blue-Green Deployment Strategy
+
+This project implements a Blue-Green Deployment model to achieve zero downtime deployments.
+
+## Blue Environment
+
+- Current Production Environment
+- Serves Live User Traffic
+- Stable Application Version
+
+## Green Environment
+
+- Newly Deployed Application Version
+- Used for Validation & Testing
+- Receives Traffic After Verification
+
+## Deployment Process
+
+1. Current production traffic is served by the Blue Environment.
+2. New application version is deployed to the Green Environment.
+3. Validation and health checks are performed.
+4. Kubernetes Service selector is updated.
+5. Traffic is switched from Blue to Green.
+6. Users experience zero downtime.
+7. If any issue occurs, traffic can instantly be redirected back to Blue.
+
 # Tools & Technologies Used
 
 | Category | Tools |
@@ -313,31 +339,6 @@ Deployment Verification
 
 ---
 
-# Blue-Green Deployment Strategy
-
-This project implements a Blue-Green Deployment model to achieve zero downtime deployments.
-
-## Blue Environment
-
-- Current Production Environment
-- Serves Live User Traffic
-- Stable Application Version
-
-## Green Environment
-
-- Newly Deployed Application Version
-- Used for Validation & Testing
-- Receives Traffic After Verification
-
-## Deployment Process
-
-1. Current production traffic is served by the Blue Environment.
-2. New application version is deployed to the Green Environment.
-3. Validation and health checks are performed.
-4. Kubernetes Service selector is updated.
-5. Traffic is switched from Blue to Green.
-6. Users experience zero downtime.
-7. If any issue occurs, traffic can instantly be redirected back to Blue.
 
 ### Benefits
 
