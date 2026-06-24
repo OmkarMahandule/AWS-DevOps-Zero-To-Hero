@@ -25,8 +25,6 @@ The project integrates multiple DevOps tools and AWS services including Jenkins,
 
 # Blue-Green Deployment Strategy
 
-This project implements a Blue-Green Deployment model to achieve zero downtime deployments.
-
 ## Blue Environment
 
 - Current Production Environment
