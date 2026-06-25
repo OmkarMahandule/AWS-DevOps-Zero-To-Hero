@@ -149,6 +149,8 @@ Terraform was used to provision the Kubernetes infrastructure on AWS.
 
 A Declarative Jenkins Pipeline was created to automate the entire software delivery lifecycle.
 
+[📄 Jenkinsfile](./Jenkinsfile)
+
 ### Pipeline Stages
 
 <img width="525" height="636" alt="CI-CD" src="https://github.com/user-attachments/assets/be203d98-90b4-43cb-b557-2ee9048b3362" />
