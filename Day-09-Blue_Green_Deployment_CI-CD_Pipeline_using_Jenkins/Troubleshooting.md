@@ -25,6 +25,8 @@ Latest Jenkins version required Java 21 but Java 17 was installed.
 ### Issue
 
 Pipeline execution stopped during Quality Gate validation.
+<img width="1920" height="1080" alt="Jenkins-SonarQube-report_pending" src="https://github.com/user-attachments/assets/cd1ec221-162a-4255-942f-88ac4c18758d" />
+
 
 ### Root Cause
 
