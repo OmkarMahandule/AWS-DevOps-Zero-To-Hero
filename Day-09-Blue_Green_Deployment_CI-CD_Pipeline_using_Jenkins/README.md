@@ -151,29 +151,19 @@ A Declarative Jenkins Pipeline was created to automate the entire software deliv
 
 ### Pipeline Stages
 
-- Git Checkout
-- Compile
-- Test
-- Trivy FS Scan
-- SonarQube Analysis
-- Quality Gate Validation
-- Package
-- Nexus Upload
-- Docker Build
-- Docker Image Scan
-- Docker Push
-- EKS Deployment
+<img width="525" height="636" alt="CI-CD" src="https://github.com/user-attachments/assets/be203d98-90b4-43cb-b557-2ee9048b3362" />
 
 
 ---
 
-## Step 6: Static Code Analysis using SonarQube
+## Step 6: Code Analysis using SonarQube
 
 SonarQube was integrated into the pipeline to enforce code quality and security standards.
 
-### Screenshot
 
-![SonarQube Dashboard](images/sonarqube-dashboard.png)
+<img width="1920" height="1080" alt="SonarQube_test_passed" src="https://github.com/user-attachments/assets/e30d36d3-94c4-41a0-a6f4-0e4f61228745" />
+
+<img width="1920" height="1080" alt="SonarQube_BG-Tests" src="https://github.com/user-attachments/assets/d7c9a03d-2531-4370-8613-73acef02e344" />
 
 ---
 
@@ -181,9 +171,11 @@ SonarQube was integrated into the pipeline to enforce code quality and security 
 
 Build artifacts were automatically published to Nexus Repository.
 
-### Screenshot
 
-![Nexus Repository](images/nexus-dashboard.png)
+<img width="1920" height="1080" alt="Nexus_snapshots_details" src="https://github.com/user-attachments/assets/eefcbfd5-1301-4f6c-a7a9-df8aa9771c7a" />
+
+<img width="1920" height="1080" alt="Nexux_Malware_Risk_Analysis" src="https://github.com/user-attachments/assets/e838b1ec-9923-4e56-bf7b-4b6a50cd8090" />
+
 
 ---
 
@@ -191,9 +183,7 @@ Build artifacts were automatically published to Nexus Repository.
 
 The application was containerized using Docker and pushed to Docker Hub.
 
-### Screenshot
-
-![Docker Hub Repository](images/dockerhub-repository.png)
+<img width="1920" height="1080" alt="Docker_bankapp_repo" src="https://github.com/user-attachments/assets/471fd5d6-f0b8-4d31-8b14-023b528bea0e" />
 
 ---
 
@@ -208,19 +198,20 @@ Application workloads were deployed to Amazon EKS using Kubernetes manifests.
 - Service Accounts
 - Secrets
 
-### Screenshot
-
-![EKS Cluster](images/eks-cluster.png)
-
 ---
 
 ## Step 10: Deploying Blue Environment
 
 The Blue environment represented the currently active production version.
 
-### Screenshot
 
-![Blue Deployment](images/blue-deployment.png)
+<img width="1915" height="1075" alt="Build_with_parameter-blue" src="https://github.com/user-attachments/assets/8f27a980-bf7d-45f4-81ed-60ea9d81117e" />
+
+<img width="1920" height="1080" alt="Blue_Env" src="https://github.com/user-attachments/assets/e7107d84-a21c-402b-a490-8a524f5e18c5" />
+
+<img width="1920" height="1080" alt="Build_07_Console_output" src="https://github.com/user-attachments/assets/4f8651ca-db8c-4c35-83bf-d760ce609aa4" />
+
+<img width="1920" height="1080" alt="Blue_env_CLI" src="https://github.com/user-attachments/assets/88c513a1-b77b-425c-9e0b-2aa0dac0f4e2" />
 
 ---
 
@@ -228,9 +219,13 @@ The Blue environment represented the currently active production version.
 
 The Green environment hosted the new application version for validation and testing.
 
-### Screenshot
 
-![Green Deployment](images/green-deployment.png)
+<img width="1920" height="1080" alt="Green_Env_parameter" src="https://github.com/user-attachments/assets/befd1b19-f02d-4f16-aa83-5af9effcf238" />
+
+<img width="1920" height="1080" alt="Build_08_Console_output" src="https://github.com/user-attachments/assets/2b5c2c92-7bf4-4a70-a433-a045517e0acd" />
+
+<img width="1920" height="1080" alt="Blue-Green_Env_CLI" src="https://github.com/user-attachments/assets/5c1e3ef9-da56-463e-812f-abdc38c3acd4" />
+
 
 ---
 
@@ -244,9 +239,8 @@ This ensured:
 - Safe Deployments
 - Instant Rollback Capability
 
-### Screenshot
+<img width="1920" height="1080" alt="Green_pipline_traffic_shift" src="https://github.com/user-attachments/assets/0cba3541-91bf-4238-a179-a4d4d971843c" />
 
-![Traffic Switching](images/traffic-switching.png)
 
 ---
 
@@ -260,17 +254,7 @@ The deployment was verified by checking:
 - Load Balancer
 - Application Accessibility
 
-### Screenshot
-
-![Kubernetes Pods](images/kubernetes-pods.png)
-
-### Screenshot
-
-![Kubernetes Service](images/kubernetes-service.png)
-
-### Screenshot
-
-![AWS Load Balancer](images/load-balancer.png)
+<img width="1920" height="1080" alt="Pipeline_stages_Buils_07_08" src="https://github.com/user-attachments/assets/ed132300-b30f-4636-81b5-794622bbd450" />
 
 ---
 
@@ -278,62 +262,8 @@ The deployment was verified by checking:
 
 The application was successfully accessed through the AWS Load Balancer endpoint, confirming successful deployment.
 
-### Screenshot
 
-![Application Login Page](images/application-login.png)
-
----
-
-
-
-```text
-GitHub
-   │
-   ▼
-Git Checkout
-   │
-   ▼
-Compile
-   │
-   ▼
-Unit Test
-   │
-   ▼
-Trivy File System Scan
-   │
-   ▼
-SonarQube Analysis
-   │
-   ▼
-Quality Gate Validation
-   │
-   ▼
-Package Build
-   │
-   ▼
-Publish Artifact to Nexus
-   │
-   ▼
-Docker Build
-   │
-   ▼
-Trivy Image Scan
-   │
-   ▼
-Docker Push
-   │
-   ▼
-Deploy to Amazon EKS
-   │
-   ▼
-Blue-Green Deployment
-   │
-   ▼
-Traffic Switching
-   │
-   ▼
-Deployment Verification
-```
+<img width="1920" height="1080" alt="Blue-Green_App_UI" src="https://github.com/user-attachments/assets/3a1876eb-da23-4ff4-8ac1-e99564f45221" />
 
 ---
 
@@ -353,10 +283,13 @@ Deployment Verification
 
 Implemented:
 
-- Static Code Analysis
+- Code Analysis
 - Vulnerability Detection
 - Code Quality Validation
 - Quality Gate Enforcement
+
+  <img width="1920" height="1080" alt="SonarQube_test_passed" src="https://github.com/user-attachments/assets/2f1fdee3-8c2b-4100-adb3-814539c4d229" />
+
 
 ## Trivy
 
