@@ -1,6 +1,4 @@
-# AWS DevOps Zero to Hero: 30-Day Learning Challenge
-
-Welcome to my 30-day AWS DevOps journey!  
+# AWS DevOps Zero to Hero: Learning Challenge
 
 I’ve spent time learning the fundamentals snd theory behind Linux, Git, Docker, CI/CD, cloud, automation, and monitoring. Now, I’m moving to **hands-on implementation**, focused on AWS. Over the next 30 days, I’ll be building projects, exploring services, and documenting everything publicly.  
 
