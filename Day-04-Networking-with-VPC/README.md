@@ -75,28 +75,28 @@ Control how traffic flows inside the VPC.
 ## Hands-On Steps Performed
 1. Created a custom VPC with CIDR `10.0.0.0/16`
    
-   <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/ac979e9f-cc29-421d-9c5d-6b13bd4a482b" />
+   <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/ac979e9f-cc29-421d-9c5d-6b13bd4a482b" />
 
 2. Created public and private subnets
    
-   <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/a5c7988a-6557-4ae7-a841-17d4c681101b" />
+   <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/a5c7988a-6557-4ae7-a841-17d4c681101b" />
 
 3. Attached an Internet Gateway to the VPC
 
-   <img width="800" height="601" alt="image" src="https://github.com/user-attachments/assets/c82a0e4f-da06-4122-b0f4-aed2f9f5f658" />
+   <img width="800" height="401" alt="image" src="https://github.com/user-attachments/assets/c82a0e4f-da06-4122-b0f4-aed2f9f5f658" />
 
 4. Created and configured route tables
 
-   <img width="800" height="601" alt="image" src="https://github.com/user-attachments/assets/94dbec10-3977-44c1-b391-b9312c2cf461" />
+   <img width="800" height="401" alt="image" src="https://github.com/user-attachments/assets/94dbec10-3977-44c1-b391-b9312c2cf461" />
 
 5. Associated public route table with public subnet
 6. Launched EC2 instance in public subnet
 
-    <img width="800" height="601" alt="image" src="https://github.com/user-attachments/assets/84bbfebf-de95-4ad7-85ed-2feeb6d2bad7" />
+    <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/84bbfebf-de95-4ad7-85ed-2feeb6d2bad7" />
 
 7. Verified internet and SSH connectivity
 
-<img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/9852365d-1da0-41b4-9002-06d8e0e4a2e4" />
+<img width="800" height="300" alt="image" src="https://github.com/user-attachments/assets/9852365d-1da0-41b4-9002-06d8e0e4a2e4" />
 
 ---
 
